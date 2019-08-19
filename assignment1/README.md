@@ -23,8 +23,3 @@ Please compress your code file into a zipped file (firstName_lastName_hw1.zip) a
 * policy iteration (20 points)
 * value iteration (20 points)
 * rander game (20 points)
-
-
-```python
-
-```
