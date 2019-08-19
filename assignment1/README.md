@@ -24,3 +24,7 @@ Please compress your code file into a zipped file (firstName_lastName_hw1.zip) a
 * policy iteration (20 points)
 * value iteration (20 points)
 * rander game (20 points)
+
+## Guidelines
+* Implement functions in mdp_dp.py
+* Evaluate functions by typing "nosetests -v mdp_dp_test.py" (put mdp_dp.py and mdp_dp_test.py in the same folder)
