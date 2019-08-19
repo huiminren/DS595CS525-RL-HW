@@ -71,9 +71,6 @@ def policy_improvement(P, nS, nA, value_from_policy, gamma=0.9):
         An array of integers. Each integer is the optimal action to take
         in that state according to the environment dynamics and the
         given value function.
-    Hints:
-    ------
-    You should construct a stochastic policy that puts equal probability on maximizing action
     """
 
     new_policy = np.zeros([nS, nA]) / nA
