@@ -4,6 +4,9 @@ from mdp_dp import *
 import gym
 import sys
 import numpy as np
+
+from gym.envs.registration import register
+
 """
     This file includes unit test for mdp_dp.py
     You could test the correctness of your code by 
@@ -11,6 +14,13 @@ import numpy as np
 """
 env = gym.make("FrozenLake-v0")
 env = env.unwrapped
+
+register(
+    id='Deterministic-4x4-FrozenLake-v0',
+    entry_point='gym.envs.toy_text.frozen_lake:FrozenLakeEnv',
+    kwargs={'map_name': '4x4',
+            'is_slippery': False})
+env2 = gym.make("Deterministic-4x4-FrozenLake-v0")
 
 #---------------------------------------------------------------
 def test_python_version():
@@ -22,15 +32,15 @@ def test_policy_evaluation():
     '''policy_evaluation (20 points)'''
     random_policy1 = np.ones([env.nS, env.nA]) / env.nA
     V1 = policy_evaluation(env.P,env.nS,env.nA, random_policy1)
-    test_v1 = np.array([0.003, 0.003, 0.009, 0.004, 0.006, 0., 0.026, 0., 0.018,
-       0.057, 0.107, 0., 0., 0.13 , 0.391, 0.])
+    test_v1 = np.array([0.004, 0.004, 0.01 , 0.004, 0.007, 0. , 0.026, 0. , 0.019,
+       0.058, 0.107, 0. , 0. , 0.13 , 0.391, 0. ])
 
     np.random.seed(595)
     random_policy2 = np.random.rand(env.nS, env.nA)
     random_policy2 = random_policy2/random_policy2.sum(axis=1)[:,None]
     V2 = policy_evaluation(env.P,env.nS,env.nA, random_policy2)
-    test_v2 = np.array([0.004, 0.006, 0.015, 0.006, 0.008, 0. , 0.042, 0. , 0.028,
-       0.093, 0.173, 0. , 0. , 0.214, 0.503, 0. ])
+    test_v2 = np.array([0.007, 0.007, 0.017, 0.007, 0.01 , 0. , 0.043, 0. , 0.029,
+       0.093, 0.174, 0. , 0. , 0.215, 0.504, 0. ])
 
     assert np.allclose(test_v1,V1,atol=1e-3)
     assert np.allclose(test_v2,V2,atol=1e-3)
@@ -109,14 +119,38 @@ def test_policy_iteration():
        [0., 0., 1., 0.],
        [0., 1., 0., 0.],
        [1., 0., 0., 0.]])
-    
-    optimal_V = np.array([0.065, 0.058, 0.073, 0.054, 0.089, 0., 0.111, 0., 0.143,
-       0.246, 0.299, 0., 0., 0.379, 0.639, 0.])
+    optimal_V = np.array([0.069, 0.061, 0.074, 0.056, 0.092, 0., 0.112, 0., 0.145,
+       0.247, 0.3 , 0., 0., 0.38 , 0.639, 0.])
+
+
+    policy_pi3, V_pi3 = policy_iteration(env2.P, env2.nS, env2.nA, random_policy1)
+    optimal_policy2 = np.array([[0., 1., 0., 0.],
+       [0., 0., 1., 0.],
+       [0., 1., 0., 0.],
+       [1., 0., 0., 0.],
+       [0., 1., 0., 0.],
+       [1., 0., 0., 0.],
+       [0., 1., 0., 0.],
+       [1., 0., 0., 0.],
+       [0., 0., 1., 0.],
+       [0., 1., 0., 0.],
+       [0., 1., 0., 0.],
+       [1., 0., 0., 0.],
+       [1., 0., 0., 0.],
+       [0., 0., 1., 0.],
+       [0., 0., 1., 0.],
+       [1., 0., 0., 0.]])
+    optimal_V2 = np.array([0.59 , 0.656, 0.729, 0.656, 0.656, 0. , 0.81 , 0. , 0.729,
+       0.81 , 0.9  , 0. , 0. , 0.9 , 1. , 0. ])
+
 
     assert np.allclose(policy_pi1,optimal_policy)
-    assert np.allclose(V_pi1,optimal_V,atol=1e-2)
+    assert np.allclose(V_pi1,optimal_V,atol=1e-3)
     assert np.allclose(policy_pi2,optimal_policy)
-    assert np.allclose(V_pi2,optimal_V,atol=1e-2)
+    assert np.allclose(V_pi2,optimal_V,atol=1e-3)
+    assert np.allclose(policy_pi3,optimal_policy2)
+    assert np.allclose(V_pi3,optimal_V2,atol=1e-3)
+
 
 #---------------------------------------------------------------
 def test_value_iteration():
@@ -144,14 +178,37 @@ def test_value_iteration():
        [0., 0., 1., 0.],
        [0., 1., 0., 0.],
        [1., 0., 0., 0.]])
-    
-    optimal_V = np.array([0.065, 0.058, 0.073, 0.054, 0.089, 0., 0.111, 0., 0.143,
-       0.246, 0.299, 0., 0., 0.379, 0.639, 0.])
+    optimal_V = np.array([0.069, 0.061, 0.074, 0.056, 0.092, 0. , 0.112, 0. , 0.145,
+        0.247, 0.3  , 0. , 0. , 0.38 , 0.639, 0. ])
+
+    policy_vi3, V_vi3 = value_iteration(env2.P, env2.nS, env2.nA, V2)
+
+    optimal_policy2 = np.array([[0., 1., 0., 0.],
+       [0., 0., 1., 0.],
+       [0., 1., 0., 0.],
+       [1., 0., 0., 0.],
+       [0., 1., 0., 0.],
+       [1., 0., 0., 0.],
+       [0., 1., 0., 0.],
+       [1., 0., 0., 0.],
+       [0., 0., 1., 0.],
+       [0., 1., 0., 0.],
+       [0., 1., 0., 0.],
+       [1., 0., 0., 0.],
+       [1., 0., 0., 0.],
+       [0., 0., 1., 0.],
+       [0., 0., 1., 0.],
+       [1., 0., 0., 0.]])
+    optimal_V2 = np.array([0.59 , 0.656, 0.729, 0.656, 0.656, 0. , 0.81 , 0. , 0.729,
+       0.81 , 0.9  , 0. , 0. , 0.9 , 1. , 0. ])
+
     
     assert np.allclose(policy_vi1,optimal_policy)
-    assert np.allclose(V_vi1,optimal_V,atol=1e-2)
+    assert np.allclose(V_vi1,optimal_V,atol=1e-3)
     assert np.allclose(policy_vi2,optimal_policy)
-    assert np.allclose(V_vi2,optimal_V,atol=1e-2)
+    assert np.allclose(V_vi2,optimal_V,atol=1e-3)
+    assert np.allclose(policy_vi3,optimal_policy2)
+    assert np.allclose(V_vi3,optimal_V2,atol=1e-3)
 
 #---------------------------------------------------------------            
 def test_render_single():
@@ -168,5 +225,5 @@ def test_render_single():
     r_vi = render_single(env, p_vi, False, 50)
     print("total rewards of VI: ",r_vi)
     
-    assert r_pi > 35
-    assert r_vi > 35
+    assert r_pi > 30
+    assert r_vi > 30
