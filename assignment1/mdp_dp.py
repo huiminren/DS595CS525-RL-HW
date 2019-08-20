@@ -71,9 +71,12 @@ def policy_improvement(P, nS, nA, value_from_policy, gamma=0.9):
         An array of integers. Each integer is the optimal action to take
         in that state according to the environment dynamics and the
         given value function.
+    Hints:
+    ------
+    You should construct a stochastic policy that puts equal probability on maximizing action
     """
 
-    new_policy = np.zeros([nS, nA]) / nA
+    new_policy = np.ones([nS, nA]) / nA
 
 	############################
 	# YOUR IMPLEMENTATION HERE #
@@ -83,7 +86,7 @@ def policy_improvement(P, nS, nA, value_from_policy, gamma=0.9):
     return new_policy
 
 
-def policy_iteration(P, nS, nA, gamma=0.9, tol=1e-3):
+def policy_iteration(P, nS, nA, policy, gamma=0.9, tol=1e-3):
     """Runs policy iteration.
 
     You should call the policy_evaluation() and policy_improvement() methods to
@@ -93,23 +96,22 @@ def policy_iteration(P, nS, nA, gamma=0.9, tol=1e-3):
     ----------
     P, nS, nA, gamma:
         defined at beginning of file
+    policy: policy to be updated
     tol: float
         tol parameter used in policy_evaluation()
     Returns:
     ----------
-    policy: np.ndarray[nS,nA]
+    new_policy: np.ndarray[nS,nA]
     V: np.ndarray[nS]
     """
-
-    policy = np.zeros([nS, nA]) / nA
-
+    new_policy = policy.copy()
 	############################
 	# YOUR IMPLEMENTATION HERE #
 
 	############################
-    return policy, V
+    return new_policy, V
 
-def value_iteration(P, nS, nA, gamma=0.9, tol=1e-3):
+def value_iteration(P, nS, nA, V, gamma=0.9, tol=1e-3):
     """
     Learn value function and policy by using value iteration method for a given
     gamma and environment.
@@ -118,22 +120,23 @@ def value_iteration(P, nS, nA, gamma=0.9, tol=1e-3):
     ----------
     P, nS, nA, gamma:
         defined at beginning of file
+    V: value to be updated
     tol: float
         Terminate value iteration when
             max |value_function(s) - prev_value_function(s)| < tol
     Returns:
     ----------
-    V: np.ndarray[nS]
-    policy: np.ndarray[nS]
+    policy_new: np.ndarray[nS,nA]
+    V_new: np.ndarray[nS]
     """
+    
+    V_new = V.copy()
 
-    V = np.zeros(nS)
-    policy = np.zeros([nS, nA]) / nA
     ############################
     # YOUR IMPLEMENTATION HERE #
 
     ############################
-    return policy, V
+    return policy_new, V_new
 
 def render_single(env, policy, render = False, n_episodes=100):
     """
