@@ -1,5 +1,5 @@
 
-# DS 595 2019 FAll Inidividual Assignment 1
+# DS595/CS525 2019 FAll Inidividual Assignment 1
 # Dynamic Programming of Markov Decision Process
 
 #### Due Date
