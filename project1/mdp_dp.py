@@ -68,16 +68,14 @@ def policy_improvement(P, nS, nA, value_from_policy, gamma=0.9):
     Returns:
     --------
     new_policy: np.ndarray[nS,nA]
-        An array of integers. Each integer is the optimal action to take
-        in that state according to the environment dynamics and the
+        A 2D array of floats. Each float is the probability of the action
+        to take in that state according to the environment dynamics and the 
         given value function.
     """
 
     new_policy = np.ones([nS, nA]) / nA
-
 	############################
 	# YOUR IMPLEMENTATION HERE #
-        
 
 	############################
     return new_policy
