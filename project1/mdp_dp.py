@@ -52,7 +52,7 @@ def policy_evaluation(P, nS, nA, policy, gamma=0.9, tol=1e-3):
     ############################
     # YOUR IMPLEMENTATION HERE #
     
-
+    ############################
     return value_function
 
 
@@ -71,9 +71,6 @@ def policy_improvement(P, nS, nA, value_from_policy, gamma=0.9):
         An array of integers. Each integer is the optimal action to take
         in that state according to the environment dynamics and the
         given value function.
-    Hints:
-    ------
-    You should construct a stochastic policy that puts equal probability on maximizing action
     """
 
     new_policy = np.ones([nS, nA]) / nA
@@ -131,7 +128,6 @@ def value_iteration(P, nS, nA, V, gamma=0.9, tol=1e-3):
     """
     
     V_new = V.copy()
-
     ############################
     # YOUR IMPLEMENTATION HERE #
 
