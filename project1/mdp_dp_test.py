@@ -25,7 +25,7 @@ env2 = gym.make("Deterministic-4x4-FrozenLake-v0")
 #---------------------------------------------------------------
 def test_python_version():
     '''------Dynamic Programming for MDP (100 points in total)------'''
-    assert sys.version_info[0] == 3 # require python 2
+    assert sys.version_info[0] == 3 # require python 3
 
 #---------------------------------------------------------------
 def test_policy_evaluation():
