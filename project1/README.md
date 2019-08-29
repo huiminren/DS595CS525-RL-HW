@@ -10,7 +10,7 @@
 
 ## Goal
 
-In this assignment, you will be asked to implement policy iteration and value iteration for the Frozen Lake environment from [OpenAI Gym](https://gym.openai.com/envs/#toy_text) and play the game with the algorithms you implemented. This project will be completed in Python 3. 
+In this assignment, you will be asked to implement policy iteration and value iteration for the Frozen Lake environment from [OpenAI Gym](https://gym.openai.com/envs/#toy_text) and play the game with the algorithms you implemented. This project will be completed in Python 3.6. 
 <img src="https://github.com/huiminren/DS595CS525-RL-HW/blob/master/project1/hw1.png" width="80%" align="center">
 
 ## Deliverables
