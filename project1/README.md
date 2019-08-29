@@ -16,7 +16,7 @@ In this assignment, you will be asked to implement policy iteration and value it
 
 ## Deliverables
 
-Please compress your code file into a zipped file (firstName_lastName_hw1.zip) and submit it to Canvas.
+Please compress your mdp_dp.py file into a zipped file (firstName_lastName_hw1.zip) and submit it to Canvas.
 
 ## Grading
 
