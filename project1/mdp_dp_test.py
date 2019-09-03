@@ -12,9 +12,12 @@ from gym.envs.registration import register
     You could test the correctness of your code by 
     typing 'nosetests -v mdp_dp_test.py' in the terminal
 """
+# Evaluate non-deterministic
 env = gym.make("FrozenLake-v0")
 env = env.unwrapped
 
+
+# Evaluate deterministic
 register(
     id='Deterministic-4x4-FrozenLake-v0',
     entry_point='gym.envs.toy_text.frozen_lake:FrozenLakeEnv',
@@ -31,19 +34,21 @@ def test_python_version():
 def test_policy_evaluation():
     '''policy_evaluation (20 points)'''
     random_policy1 = np.ones([env.nS, env.nA]) / env.nA
-    V1 = policy_evaluation(env.P,env.nS,env.nA, random_policy1)
+    V1 = policy_evaluation(env.P,env.nS,env.nA, random_policy1,tol=1e-8)
     test_v1 = np.array([0.004, 0.004, 0.01 , 0.004, 0.007, 0. , 0.026, 0. , 0.019,
        0.058, 0.107, 0. , 0. , 0.13 , 0.391, 0. ])
 
     np.random.seed(595)
     random_policy2 = np.random.rand(env.nS, env.nA)
     random_policy2 = random_policy2/random_policy2.sum(axis=1)[:,None]
-    V2 = policy_evaluation(env.P,env.nS,env.nA, random_policy2)
+    V2 = policy_evaluation(env.P,env.nS,env.nA, random_policy2,tol=1e-8)
     test_v2 = np.array([0.007, 0.007, 0.017, 0.007, 0.01 , 0. , 0.043, 0. , 0.029,
        0.093, 0.174, 0. , 0. , 0.215, 0.504, 0. ])
 
     assert np.allclose(test_v1,V1,atol=1e-3)
     assert np.allclose(test_v2,V2,atol=1e-3)
+    
+
 
 #---------------------------------------------------------------
 def test_policy_improvement():
@@ -100,8 +105,8 @@ def test_policy_iteration():
     random_policy2 = np.random.rand(env.nS, env.nA)
     random_policy2 = random_policy2/random_policy2.sum(axis=1)[:,None]
 
-    policy_pi1, V_pi1 = policy_iteration(env.P, env.nS, env.nA, random_policy1)
-    policy_pi2, V_pi2 = policy_iteration(env.P, env.nS, env.nA, random_policy2)
+    policy_pi1, V_pi1 = policy_iteration(env.P, env.nS, env.nA, random_policy1,tol=1e-8)
+    policy_pi2, V_pi2 = policy_iteration(env.P, env.nS, env.nA, random_policy2,tol=1e-8)
 
     optimal_policy = np.array([[1., 0., 0., 0.],
        [0., 0., 0., 1.],
@@ -123,7 +128,7 @@ def test_policy_iteration():
        0.247, 0.3 , 0., 0., 0.38 , 0.639, 0.])
 
 
-    policy_pi3, V_pi3 = policy_iteration(env2.P, env2.nS, env2.nA, random_policy1)
+    policy_pi3, V_pi3 = policy_iteration(env2.P, env2.nS, env2.nA, random_policy1,tol=1e-8)
     optimal_policy2 = np.array([[0., 1., 0., 0.],
        [0., 0., 1., 0.],
        [0., 1., 0., 0.],
@@ -157,10 +162,10 @@ def test_value_iteration():
     '''value_iteration (20 points)'''
     np.random.seed(10000)
     V1 = np.random.rand(env.nS)
-    policy_vi1, V_vi1 = value_iteration(env.P, env.nS, env.nA, V1)
+    policy_vi1, V_vi1 = value_iteration(env.P, env.nS, env.nA, V1, tol= 1e-8)
 
     V2 = np.zeros(env.nS)
-    policy_vi2, V_vi2 = value_iteration(env.P, env.nS, env.nA, V2)
+    policy_vi2, V_vi2 = value_iteration(env.P, env.nS, env.nA, V2, tol= 1e-8)
 
     optimal_policy = np.array([[1., 0., 0., 0.],
        [0., 0., 0., 1.],
@@ -215,15 +220,16 @@ def test_render_single():
     '''render_single (20 points)'''                 
     print("\n" + "-"*25 + "\nBeginning Policy Iteration\n" + "-"*25)
     random_policy = np.ones([env.nS, env.nA]) / env.nA
-    p_pi, V_pi = policy_iteration(env.P, env.nS, env.nA, random_policy)
+    p_pi, V_pi = policy_iteration(env.P, env.nS, env.nA, random_policy,tol=1e-8)
     r_pi = render_single(env, p_pi, False, 50)
     print("total rewards of PI: ",r_pi)
     
     print("\n" + "-"*25 + "\nBeginning Value Iteration\n" + "-"*25)
     V = np.zeros(env.nS)
-    p_vi, V_vi = value_iteration(env.P, env.nS, env.nA, V)
+    p_vi, V_vi = value_iteration(env.P, env.nS, env.nA, V,tol=1e-8)
     r_vi = render_single(env, p_vi, False, 50)
     print("total rewards of VI: ",r_vi)
+    
     
     assert r_pi > 30
     assert r_vi > 30
