@@ -29,7 +29,7 @@ the parameters P, nS, nA, gamma are defined as follows:
 		Discount factor. Number in range [0, 1)
 """
 
-def policy_evaluation(P, nS, nA, policy, gamma=0.9, tol=1e-3):
+def policy_evaluation(P, nS, nA, policy, gamma=0.9, tol=1e-8):
     """Evaluate the value function from a given policy.
 
     Parameters:
@@ -81,7 +81,7 @@ def policy_improvement(P, nS, nA, value_from_policy, gamma=0.9):
     return new_policy
 
 
-def policy_iteration(P, nS, nA, policy, gamma=0.9, tol=1e-3):
+def policy_iteration(P, nS, nA, policy, gamma=0.9, tol=1e-8):
     """Runs policy iteration.
 
     You should call the policy_evaluation() and policy_improvement() methods to
@@ -106,7 +106,7 @@ def policy_iteration(P, nS, nA, policy, gamma=0.9, tol=1e-3):
 	############################
     return new_policy, V
 
-def value_iteration(P, nS, nA, V, gamma=0.9, tol=1e-3):
+def value_iteration(P, nS, nA, V, gamma=0.9, tol=1e-8):
     """
     Learn value function and policy by using value iteration method for a given
     gamma and environment.
