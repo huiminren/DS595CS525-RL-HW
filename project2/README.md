@@ -11,8 +11,8 @@
 ## Goals
 In this project, you will be asked to implement two model-free algorithms. The first one is Monte-Carlo(MC), including  the first visit of on-policy MC prediction and on-policy MC control for [blackjack](https://gym.openai.com/envs/Blackjack-v0/). The second one is Temporal-Difference(TD), including Sarsa(on-policy) and Q-Learning(off-policy) for [cliffwalking](https://github.com/openai/gym/blob/master/gym/envs/toy_text/cliffwalking.py).
 
-<img src="https://github.com/huiminren/2019F-DS595-RL/blob/master/project2/img/project2-1.png" width="80%" >
-<img src="https://github.com/huiminren/2019F-DS595-RL/blob/master/project2/img/project2-2.png" width="80%" >
+<img src="https://github.com/huiminren/DS595CS525-RL-HW/blob/master/project2/img/project2-1.png" width="80%" >
+<img src="https://github.com/huiminren/DS595CS525-RL-HW/blob/master/project2/img/project2-2.png" width="80%" >
 
 ## Deliverables
 
@@ -31,13 +31,13 @@ Please compress your mc.py and td.py files into a zipped file (firstName_lastNam
 
 ## Hints
 * On-policy first visit Monte-Carlo control
-<img src="https://github.com/huiminren/2019F-DS595-RL/blob/master/project2/img/mc.png" width="80%" >
+<img src="https://github.com/huiminren/DS595CS525-RL-HW/blob/master/project2/img/mc.png" width="80%" >
 
 * Sarsa (on-policy TD control)
-<img src="https://github.com/huiminren/2019F-DS595-RL/blob/master/project2/img/sarsa.png" width="80%" >
+<img src="https://github.com/huiminren/DS595CS525-RL-HW/blob/master/project2/img/sarsa.png" width="80%" >
 
 * Q-learing (off-policy TD control)
-<img src="https://github.com/huiminren/2019F-DS595-RL/blob/master/project2/img/q-learning.png" width="80%" >
+<img src="https://github.com/huiminren/DS595CS525-RL-HW/blob/master/project2/img/q-learning.png" width="80%" >
 
 ## Guidelines
 * Implement functions in mc.py and td.py
