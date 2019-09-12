@@ -30,6 +30,9 @@ Please compress your mc.py and td.py files into a zipped file (firstName_lastNam
 <span style="color:blue">**TA will run your code twice. You will get full credits if one of the tests passes.**</span><br/>
 
 ## Hints
+* On-policy first visit Monte-Carlo prediction
+<img src="https://github.com/huiminren/DS595CS525-RL-HW/blob/master/project2/img/mc_predict.png" width="80%" >
+
 * On-policy first visit Monte-Carlo control
 <img src="https://github.com/huiminren/DS595CS525-RL-HW/blob/master/project2/img/mc.png" width="80%" >
 
