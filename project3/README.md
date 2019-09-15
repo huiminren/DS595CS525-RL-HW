@@ -1,6 +1,6 @@
 # Inidividual Project 3
 # Deep Q-learning Network(DQN)
-* Please don't revise test.py, environment.py and agent.py
+Please don't revise test.py, environment.py and agent.py
 
 #### Due Date
 * Thursday October 17, 2019 (23:59)
@@ -23,7 +23,7 @@ testing DQN:
 * `$ python test.py --test_dqn`
 
 ## Goal
-In this project, you will be asked to implement DQN to play [Breakout](https://gym.openai.com/envs/Breakout-v0/). This project will be completed in Python 3 using [Pytorch](https://pytorch.org/). The goal of your training is to get averaging reward in 100 episodes over **40** in **Breakout**, with OpenAI's Atari wrapper & unclipped reward. For more details, please see the [slides](https://docs.google.com/presentation/d/1CbYqY5DfXQy4crBw489Tno_K94Lgo7QwhDDnEoLYMbI/edit?usp=sharing)
+In this project, you will be asked to implement DQN to play [Breakout](https://gym.openai.com/envs/Breakout-v0/). This project will be completed in Python 3 using [Pytorch](https://pytorch.org/). The goal of your training is to get averaging reward in 100 episodes over **40** in **Breakout**, with OpenAI's Atari wrapper & unclipped reward. For more details, please see the [slides](https://docs.google.com/presentation/d/1CbYqY5DfXQy4crBw489Tno_K94Lgo7QwhDDnEoLYMbI/edit?usp=sharing).
 
 <img src="https://github.com/huiminren/DS595CS525-RL-HW/blob/master/project3/metarials/project3.png" width="80%" >
 
@@ -31,7 +31,7 @@ In this project, you will be asked to implement DQN to play [Breakout](https://g
 Please compress all the below files into a zipped file and submit the zip file (firstName_lastName_hw3.zip) to Canvas.
 
 * **Trained Model**
-  * model file
+  * Model file
   * If your model is too large for Canvas, upload it to a cloud space and write download.sh to download the model
 
 * **PDF Report**
