@@ -23,7 +23,7 @@ testing DQN:
 * `$ python test.py --test_dqn`
 
 ## Goal
-In this project, you will be asked to implement DQN to play [Breakout](https://gym.openai.com/envs/Breakout-v0/). This project will be completed in Python 3 using [Pytorch](https://pytorch.org/). The goal of your training is to get averaging reward in 100 episodes over **40** in **Breakout**, with OpenAI's Atari wrapper & unclipped reward. For more details, please see the [slides](https://docs.google.com/presentation/d/1CbYqY5DfXQy4crBw489Tno_K94Lgo7QwhDDnEoLYMbI/edit?usp=sharing).
+In this project, you will be asked to implement DQN to play [Breakout](https://gym.openai.com/envs/Breakout-v0/). This project will be completed in Python 3 using [Pytorch](https://pytorch.org/). The goal of your training is to get averaging reward in 100 episodes over **40 points** in **Breakout**, with OpenAI's Atari wrapper & unclipped reward. For more details, please see the [slides](https://docs.google.com/presentation/d/1CbYqY5DfXQy4crBw489Tno_K94Lgo7QwhDDnEoLYMbI/edit?usp=sharing).
 
 <img src="https://github.com/huiminren/DS595CS525-RL-HW/blob/master/project3/metarials/project3.png" width="80%" >
 
@@ -50,7 +50,7 @@ Please compress all the below files into a zipped file and submit the zip file (
 
 ## Grading
 * **Trained Model (50 points)**
-  * Getting averaging reward in 100 episodes over **40** in Breakout will get full credits. 
+  * Getting averaging reward in 100 episodes over **40 points** in Breakout will get full credits. 
   * For every average reward below 40, you will be taken off 2 points. i.e., you will be taken off 2 points, if getting averaging reward in 100 episodes is 39 and taken off 4 points, if averaging reward is 38, so on so forth.
 
 * **PDF Report (30 points)**
