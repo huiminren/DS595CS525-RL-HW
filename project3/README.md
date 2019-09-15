@@ -25,7 +25,7 @@ testing DQN:
 ## Goal
 In this project, you will be asked to implement DQN to play [Breakout](https://gym.openai.com/envs/Breakout-v0/). This project will be completed in Python 3 using [Pytorch](https://pytorch.org/). The goal of your training is to get averaging reward in 100 episodes over **40** in **Breakout**, with OpenAI's Atari wrapper & unclipped reward. For more details, please see the [slides](https://docs.google.com/presentation/d/1CbYqY5DfXQy4crBw489Tno_K94Lgo7QwhDDnEoLYMbI/edit?usp=sharing)
 
-<img src="https://github.com/huiminren/2019F-DS595-RL/blob/master/project2/img/project2-1.png" width="80%" >
+<img src="https://github.com/huiminren/DS595CS525-RL-HW/blob/master/project3/metarials/project3.png" width="80%" >
 
 ## Deliverables
 Please compress all the below files into a zipped file and submit the zip file (firstName_lastName_hw3.zip) to Canvas.
@@ -68,5 +68,5 @@ Please compress all the below files into a zipped file and submit the zip file (
 * [DQN Tutorial on Medium](https://medium.com/@jonathan_hui/rl-dqn-deep-q-network-e207751f7ae4)
 
 ## Tips for Using GPU on Google Cloud
-* [How to use Google Cloud Platform]()
-* [How to use Pytorch on GPU]()
+* [How to use Google Cloud Platform](https://github.com/huiminren/DS595CS525-RL-HW/blob/master/project3/metarials/Google_platform.pdf)
+* [How to use Pytorch on GPU](https://github.com/huiminren/DS595CS525-RL-HW/blob/master/project3/metarials/GoogleVM_GPU.pdf)
