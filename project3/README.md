@@ -51,7 +51,7 @@ Please compress all the below files into a zipped file and submit the zip file (
 ## Grading
 * **Trained Model (50 points)**
   * Getting averaging reward in 100 episodes over **40** in Breakout will get full credits. 
-  * i.e., you will be taken off 2 points, if getting averaging reward in 100 episodes is 39 and taken off 4 points, if averaging reward is 38, so on so forth.
+  * For every average reward below 40, you will be taken off 2 points. i.e., you will be taken off 2 points, if getting averaging reward in 100 episodes is 39 and taken off 4 points, if averaging reward is 38, so on so forth.
 
 * **PDF Report (30 points)**
   * Set of parameters performed: 20 points
