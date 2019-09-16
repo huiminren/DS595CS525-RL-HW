@@ -11,7 +11,7 @@ Please don't revise test.py, environment.py and agent.py
 ## Installation
 Type the following command to install OpenAI Gym Atari environment in your **virutal environment**.
 
-`$ pip install opencv-python gym==0.10.4 gym[atari]`
+`$ pip install opencv-python-headless gym==0.10.4 gym[atari]`
 
 Please refer to [OpenAI's page](https://github.com/openai/gym) if you have any problem while installing.
 
