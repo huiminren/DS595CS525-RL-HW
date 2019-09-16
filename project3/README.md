@@ -70,3 +70,7 @@ Please compress all the below files into a zipped file and submit the zip file (
 ## Tips for Using GPU on Google Cloud
 * [How to use Google Cloud Platform](https://github.com/huiminren/DS595CS525-RL-HW/blob/master/project3/metarials/Google_platform.pdf)
 * [How to use Pytorch on GPU](https://github.com/huiminren/DS595CS525-RL-HW/blob/master/project3/metarials/GoogleVM_GPU.pdf)
+
+#### Reference
+* [Original slides](https://docs.google.com/presentation/d/1RlGBmr8WwftbwnnnZm5B4h0emc8v4aGtn-dJomAQJLg/edit#slide=id.g2910edee95_0_0)
+* [Original sample codes](https://github.com/mldsta/mlds-2018-hw4)
