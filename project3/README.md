@@ -71,7 +71,3 @@ Please compress all the below files into a zipped file and submit the zip file (
 ## Tips for Using GPU on Google Cloud
 * [How to use Google Cloud Platform](https://docs.google.com/document/d/1JfIG_yBi-xEIdT6KP1-eUpgLDoY3t2QrAKULB9yf01Q/edit?usp=sharing)
 * [How to use Pytorch on GPU](https://docs.google.com/document/d/1i8YawKjEwg7qpfo7Io4C_FvSYiZxZjWMLkqHfcZMmaI/edit?usp=sharing)
-
-#### Reference
-* [Original slides](https://docs.google.com/presentation/d/1RlGBmr8WwftbwnnnZm5B4h0emc8v4aGtn-dJomAQJLg/edit#slide=id.g2910edee95_0_0)
-* [Original sample codes](https://github.com/mldsta/mlds-2018-hw4)
