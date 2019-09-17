@@ -61,15 +61,16 @@ Please compress all the below files into a zipped file and submit the zip file (
   * You can get full credits if the scripts can run successfully, otherwise you may loss some points based on your error.
 
 ## Hints
-* [How to use Pytorch](https://pytorch.org/tutorials/)
+* [Naive Pytorch Tutorial](https://github.com/huiminren/DS595CS525-RL-HW/blob/master/project3/metarials/Pytorch_tutorial.ipynb)
+* [Official Pytorch Tutorial](https://pytorch.org/tutorials/)
 * [Official DQN Pytorch Tutorial](https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html)
 * [Official DQN paper](https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf)
 * [Rainbow: Combining Improvements in Deep Reinforcement Learning](https://arxiv.org/pdf/1710.02298.pdf)
 * [DQN Tutorial on Medium](https://medium.com/@jonathan_hui/rl-dqn-deep-q-network-e207751f7ae4)
 
 ## Tips for Using GPU on Google Cloud
-* [How to use Google Cloud Platform](https://github.com/huiminren/DS595CS525-RL-HW/blob/master/project3/metarials/Google_platform.pdf)
-* [How to use Pytorch on GPU](https://github.com/huiminren/DS595CS525-RL-HW/blob/master/project3/metarials/GoogleVM_GPU.pdf)
+* [How to use Google Cloud Platform](https://docs.google.com/document/d/1JfIG_yBi-xEIdT6KP1-eUpgLDoY3t2QrAKULB9yf01Q/edit?usp=sharing)
+* [How to use Pytorch on GPU](https://docs.google.com/document/d/1i8YawKjEwg7qpfo7Io4C_FvSYiZxZjWMLkqHfcZMmaI/edit?usp=sharing)
 
 #### Reference
 * [Original slides](https://docs.google.com/presentation/d/1RlGBmr8WwftbwnnnZm5B4h0emc8v4aGtn-dJomAQJLg/edit#slide=id.g2910edee95_0_0)
