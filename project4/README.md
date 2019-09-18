@@ -12,7 +12,7 @@
   
   * [Kaggle](https://www.kaggle.com/): An online machine learning competition website.
   
-  <img src="https://github.com/huiminren/DS595CS525-RL-HW/blob/master/project4/img/kaggle.png" width="60%" >
+  <img src="https://github.com/huiminren/DS595CS525-RL-HW/blob/master/project4/img/kaggle.png" width="40%" >
   
 * You may also consider browsing through the RL publications listed below, to get more ideas.
   * [RLDM](http://rldm.org/): Multi-disciplinary Conference on Reinforcement Learning and Decision Making
