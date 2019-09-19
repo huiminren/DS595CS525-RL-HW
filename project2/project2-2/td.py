@@ -23,7 +23,7 @@ def epsilon_greedy(Q, state, nA, epsilon = 0.1):
     -----------
     Q: dict()
         A dictionary  that maps from state -> action-values,
-        where A[s][a] is the estimated action value corresponding to state s and action a. 
+        where Q[s][a] is the estimated action value corresponding to state s and action a. 
     state: int
         current state
     nA: int
@@ -67,7 +67,7 @@ def sarsa(env, n_episodes, gamma=1.0, alpha=0.5, epsilon=0.1):
     --------
     Q: dict()
         A dictionary  that maps from state -> action-values,
-        where A[s][a] is the estimated action value corresponding to state s and action a. 
+        where Q[s][a] is the estimated action value corresponding to state s and action a. 
     Hints:
     -----
     You could consider decaying epsilon, i.e. epsilon = 0.99*epsilon during each episode.
@@ -132,7 +132,7 @@ def q_learning(env, n_episodes, gamma=1.0, alpha=0.5, epsilon=0.1):
     --------
     Q: dict()
         A dictionary  that maps from state -> action-values,
-        where A[s][a] is the estimated action value corresponding to state s and action a. 
+        where Q[s][a] is the estimated action value corresponding to state s and action a. 
     """
     # a nested dictionary that maps state -> (action -> action-value)
     # e.g. Q[state] = np.darrary(nA)
