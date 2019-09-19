@@ -10,6 +10,8 @@ class DQN(nn.Module):
     -----
         Original paper for DQN
     https://storage.googleapis.com/deepmind-data/assets/papers/DeepMindNature14236Paper.pdf
+    
+    This is just a hint. You can build your own structure.
     """
     def __init__(self):
         """
