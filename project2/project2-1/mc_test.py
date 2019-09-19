@@ -51,7 +51,8 @@ def test_mc_prediction():
 #---------------------------------------------------------------
 def test_epsilon_greedy():      
     '''epsilon_greedy (8 points)'''
-    Q = defaultdict(lambda: np.zeros(env.action_space.n))
+    # just a test case, not related to blackjack
+    Q = defaultdict(lambda: np.zeros(4))
     state = (14, 7, True)
     
     actions = []
