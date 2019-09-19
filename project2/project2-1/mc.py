@@ -109,7 +109,7 @@ def epsilon_greedy(Q, state, nA, epsilon = 0.1):
     -----------
     Q: dict()
         A dictionary  that maps from state -> action-values,
-        where A[s][a] is the estimated action value corresponding to state s and action a. 
+        where Q[s][a] is the estimated action value corresponding to state s and action a. 
     state: int
         current state
     nA: int
@@ -153,7 +153,7 @@ def mc_control_epsilon_greedy(env, n_episodes, gamma = 1.0, epsilon = 0.1):
     --------
     Q: dict()
         A dictionary  that maps from state -> action-values,
-        where A[s][a] is the estimated action value corresponding to state s and action a.
+        where Q[s][a] is the estimated action value corresponding to state s and action a.
     Hint:
     -----
     You could consider decaying epsilon, i.e. epsilon = 1-0.1/n_episode during each episode
