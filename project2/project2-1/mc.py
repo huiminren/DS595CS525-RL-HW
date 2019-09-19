@@ -156,7 +156,7 @@ def mc_control_epsilon_greedy(env, n_episodes, gamma = 1.0, epsilon = 0.1):
         where Q[s][a] is the estimated action value corresponding to state s and action a.
     Hint:
     -----
-    You could consider decaying epsilon, i.e. epsilon = 1-0.1/n_episode during each episode
+    You could consider decaying epsilon, i.e. epsilon = epsilon-(0.1/n_episodes) during each episode
     and episode must > 0.    
     """
     
