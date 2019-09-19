@@ -23,7 +23,7 @@ def test_python_version():
 #---------------------------------------------------------------
 def test_epsilon_greedy():      
     '''epsilon_greedy (0 point)'''
-    Q = defaultdict(lambda: np.zeros(env.action_space.n))
+    Q = defaultdict(lambda: np.zeros(4))
     state = 5
     
     actions = []
