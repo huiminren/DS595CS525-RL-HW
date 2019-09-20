@@ -68,7 +68,7 @@ def mc_prediction(policy, env, n_episodes, gamma = 1.0):
 
         # initialize the episode
 
-        # generate empty episode
+        # generate empty episode list
 
         # loop until episode generation is done
 
@@ -82,19 +82,19 @@ def mc_prediction(policy, env, n_episodes, gamma = 1.0):
             # update state to new state
 
             
-        # get unique states set
-        # each state should be a tuple so that we can use it as a dict key
-
-
-        
-        # loop each state
-
-            # return the first index of state
-
-            # sum up all rewards with discount_factor since the first visit
-
             
-            # calculate average return for this state over all sampled episodes
+
+        # loop for each step of episode, t = T-1, T-2,...,0
+
+            # compute G
+
+            # unless state_t appears in states
+            
+                # update return_count
+                
+                # update return_sum
+
+                # calculate average return for this state over all sampled episodes
 
 
 
@@ -175,7 +175,7 @@ def mc_control_epsilon_greedy(env, n_episodes, gamma = 1.0, epsilon = 0.1):
 
         # initialize the episode
 
-        # generate empty episode
+        # generate empty episode list
 
         # loop until one episode generation is done
 
@@ -188,20 +188,18 @@ def mc_control_epsilon_greedy(env, n_episodes, gamma = 1.0, epsilon = 0.1):
 
             # update state to new state
 
-    
-        # find unique (state, action) pairs we've visited in this episode
-        # each state should be a tuple so that we can use it as a dict key
-
+            
         
-        # loop each state,action pair
+        # loop for each step of episode, t = T-1, T-2, ...,0
+        
+            # compute G
+            
+            # unless the pair state_t, action_t appears in <state action> pair list
+            
+                # update return_count
+                
+                # update return_sum
 
-
-            # find the first occurance of the (state, action) pair in the episode
-
-            # sum up all rewards since the first occurance
-
-            # calculate average return for this state over all sampled episodes
-
-
+                # calculate average return for this state over all sampled episodes
         
     return Q
