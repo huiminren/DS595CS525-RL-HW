@@ -90,8 +90,7 @@ def sarsa(env, n_episodes, gamma=1.0, alpha=0.5, epsilon=0.1):
         
         # get an action from policy
 
-        # one step in the environment
-        
+        # loop for each step of episode
 
             # return a new state, reward and done
 
@@ -146,7 +145,7 @@ def q_learning(env, n_episodes, gamma=1.0, alpha=0.5, epsilon=0.1):
         # initialize the environment 
 
         
-        # one step in the environment
+        # loop for each step of episode
 
             # get an action from policy
             
