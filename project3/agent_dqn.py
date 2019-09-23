@@ -59,7 +59,24 @@ class Agent_DQN(Agent):
         
         ###########################
         pass
-         
+    
+    
+    def make_action(self, observation, test=True):
+        """
+        Return predicted action of your agent
+        Input:
+            observation: np.array
+                stack 4 last preprocessed frames, shape: (84, 84, 4)
+        Return:
+            action: int
+                the predicted action from trained model
+        """
+        ###########################
+        # YOUR IMPLEMENTATION HERE #
+        
+        ###########################
+        return action
+    
     def push(self):
         """ You can add additional arguments as you need. 
         Push new data to buffer and remove the old one if the buffer is full.
@@ -85,26 +102,8 @@ class Agent_DQN(Agent):
         
         ###########################
         return 
-    
-    
-    def epsilon_greedy_action(self):
-        """You can add additional arguments as you need.
-        Select an action accordingly to an epsilon greedy policy.
         
-        Hints:
-        ------
-            You should consider decaying epsilon
-        """
-        ###########################
-        # YOUR IMPLEMENTATION HERE #
-        
-        
-        
-        ###########################
-        return
-    
-    
-    
+
     def train(self):
         """
         Implement your training algorithm here
@@ -114,24 +113,3 @@ class Agent_DQN(Agent):
         
         
         ###########################
-        
-
-
-    def make_action(self, observation, test=True):
-        """
-        Return predicted action of your agent
-        Input:
-            observation: np.array
-                stack 4 last preprocessed frames, shape: (84, 84, 4)
-        Return:
-            action: int
-                the predicted action from trained model
-        """
-        ###########################
-        # YOUR IMPLEMENTATION HERE #
-        
-        ###########################
-        return action
-
-
-    
