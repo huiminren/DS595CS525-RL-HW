@@ -13,7 +13,7 @@ import torch.optim as optim
 from agent import Agent
 from dqn_model import DQN
 """
-you can import any package and define any extrak function as you need
+you can import any package and define any extra function as you need
 """
 
 torch.manual_seed(595)
