@@ -1,6 +1,6 @@
 def add_arguments(parser):
     '''
-    Add your arguments here if needed. The TAs will run test.py to load
+    Add your arguments here if needed. The TA will run test.py to load
     your default arguments.
 
     For example:
