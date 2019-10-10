@@ -8,6 +8,27 @@ Please don't revise test.py, environment.py and agent.py
 #### Total Points
 * 100 (One Hundred)
 
+## Leaderboard and Bonus Points
+In this project, we will provide a leaderboard and give **10** bonus points to the **top 3** highest reward students! 
+* Due date for leaderboard
+   * Thursday **October31**, 2019 (23:59)
+* Where to see the leaderboard 
+  * We will create a discussion on Canvas and each of you can post your highest reward with a sreenshot. TA will summarize your posts and list the top 3 highest rewards every Thursday after the regular due date of the project 3 and post it below. <br>
+  
+  **Leaderboard for Breakout-DQN** 
+  
+  | Top | Names | Score |
+  | :---: | :---: | :---: |
+  | 1   |       |       |
+  | 2   |       |       |
+  | 3   |       |       |
+  
+* How to elvaluate
+  * You should submit your lastest trained model and python code before leaderboard due date. TA will run your code to make sure the result is consistent with your screenshot. 
+* How to grade
+  * Top 3 students on the leaderboard can get 10 bonus points for project 3.
+  
+
 ## Installation
 Type the following command to install OpenAI Gym Atari environment in your **virutal environment**.
 
