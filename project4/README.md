@@ -20,7 +20,7 @@
 ## Project Ideas
 ### Games
 <p align="center">
-<img src="img/mario.gif">
+<img src="img/mario.png">
 <img src="img/flappy_bird.png" width="35%" >
 </p>
 
