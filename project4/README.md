@@ -43,7 +43,8 @@
 ### Research Related
 * Inverse Reinforcement Learning
   * Use taxi trajectory data to inversely learn their passenger-seeking decision-making strategies
-  * [TLC Trip Record Data](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
+  * [Urban Data](https://www.cs.rutgers.edu/~dz220/data.html)
+  * [MDP trajectory data](http://urban.cs.wpi.edu/DLCTD/download.html)
   
 * Other Cool Ideas
   * [Using Intrinsic Motivation to Solve Robotic Tasks with Sparse Rewards](https://jmichaux.github.io/intrinsic-motivation/) 
