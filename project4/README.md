@@ -31,6 +31,7 @@
   * Research question
     * Define your reward function, such as getting higher score, eating more coins, letting Marios be "tall" or "fireball", etc.
     * Comparison among different deep reinforcement learning algorithms, such as DQN, PPO, A3C, etc.
+    * ...
   * Github solutions 
     * [Super-mario-bros-A3C-pytorch](https://github.com/vietnguyen1991/Super-mario-bros-A3C-pytorch)
     * [Super-mario-neat](https://github.com/vivek3141/super-mario-neat)
