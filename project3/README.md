@@ -19,8 +19,8 @@ In this project, we will provide a leaderboard and give **10** bonus points to t
   
   | Top | Names | Score |
   | :---: | :---: | :---: |
-  | 1   |       |       |
-  | 2   |       |       |
+  | 1   | Prathyush SP      |  142.77     |
+  | 2   | Sinan Morcel      |  53.26     |
   | 3   |       |       |
   
 * How to elvaluate
