@@ -20,8 +20,9 @@ In this project, we will provide a leaderboard and give **10** bonus points to t
   | Top | Names | Score |
   | :---: | :---: | :---: |
   | 1   | Prathyush SP      |  142.77     |
-  | 2   | Sinan Morcel      |  53.26     |
-  | 3   |       |       |
+  | 2   | Shreesha Narasimha Murthy      |   56.79    |
+  | 3   | Sinan Morcel      |  53.26     |
+  
   
 * How to elvaluate
   * You should submit your lastest trained model and python code before leaderboard due date. TA will run your code to make sure the result is consistent with your screenshot. 
