@@ -20,8 +20,8 @@ In this project, we will provide a leaderboard and give **10** bonus points to t
   | Top | Names | Score |
   | :---: | :---: | :---: |
   | 1   | Prathyush SP      |  142.77     |
-  | 2   | Shreesha Narasimha Murthy      |   56.79    |
-  | 3   | Sinan Morcel      |  53.26     |
+  | 2   | Sapan Agrawal     |   91.34    |
+  | 3   | Vamshi Krishna Uppununthala      |  79.5   |
   
   
 * How to elvaluate
