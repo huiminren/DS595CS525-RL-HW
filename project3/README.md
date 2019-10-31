@@ -16,7 +16,7 @@ In this project, we will provide a leaderboard and give **10** bonus points to t
   * We will create a discussion on Canvas and each of you can post your highest reward with a sreenshot. TA will summarize your posts and list the top 3 highest rewards every Thursday after the regular due date of the project 3 and post it below. <br>
   
   **Leaderboard for Breakout-DQN** 
-  **Update Date: 10/31/2019 14:30**
+  **Update Date: 10/31/2019 17:30**
   
   | Top | Name | Score | Note |
   | :---: | :---: | :---: | :---: |
