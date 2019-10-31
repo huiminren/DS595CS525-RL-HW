@@ -17,11 +17,11 @@ In this project, we will provide a leaderboard and give **10** bonus points to t
   
   **Leaderboard for Breakout-DQN** 
   
-  | Top | Names | Score |
-  | :---: | :---: | :---: |
-  | 1   | Prathyush SP      |  142.77     |
-  | 2   | Sapan Agrawal     |   91.34    |
-  | 3   | Vamshi Krishna Uppununthala      |  79.5   |
+  | Top | Date | Name | Score | Note |
+  | :---: | :---: | :---: | :---: | :---: |
+  | 1   | **10/22/2019** | Prathyush SP      |  142.77     | Conv Network and Priority Buffer trained for 50k episodes
+  | 2   | **10/26/2019** | Sapan Agrawal     |   91.34    | Architecture described in the DQN paper for 120k episodes
+  | 3   | **10/28/2019** | Vamshi Krishna Uppununthala      |  79.5   | Dueling DQN for 50k episodes
   
   
 * How to elvaluate
