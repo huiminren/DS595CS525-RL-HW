@@ -16,12 +16,13 @@ In this project, we will provide a leaderboard and give **10** bonus points to t
   * We will create a discussion on Canvas and each of you can post your highest reward with a sreenshot. TA will summarize your posts and list the top 3 highest rewards every Thursday after the regular due date of the project 3 and post it below. <br>
   
   **Leaderboard for Breakout-DQN** 
+  **Update Date: 10/31/2019**
   
-  | Top | Date | Name | Score | Note |
-  | :---: | :---: | :---: | :---: | :---: |
-  | 1   | **10/22/2019** | Prathyush SP      |  142.77     | Conv Network and Priority Buffer trained for 50k episodes
-  | 2   | **10/28/2019** | Sapan Agrawal     |   91.34    | Architecture described in the DQN paper for 120k episodes
-  | 3   | **10/26/2019** | Vamshi Krishna Uppununthala      |  79.5   | Dueling DQN for 50k episodes
+  | Top | Name | Score | Note |
+  | :---: | :---: | :---: | :---: |
+  | 1   | Prathyush SP      |  142.77     | Conv Network and Priority Buffer trained for 50k episodes
+  | 2   | Sapan Agrawal     |   91.34    | Architecture described in the DQN paper for 120k episodes
+  | 3   | Vamshi Krishna Uppununthala      |  79.5   | Dueling DQN for 50k episodes
   
   
 * How to elvaluate
