@@ -25,6 +25,7 @@ In this project, we will provide a leaderboard and give **10** bonus points to t
   |     |10/18/2019| Prathyush SP          |  81.07     | Simple DQN with Conv Based Architecture for 60k episodes
   | **3**   |10/28/2019| **Sapan Agrawal**         |   **91.34**    | Architecture described in the DQN paper for 120k episodes
   | 4   |10/26/2019| Vamshi Krishna Uppununthala|  79.5   | Dueling DQN for 50k episodes
+  | .   |10/31/2019| Sai Vineeth K V | 66.5 | Dueling DQN with 19k episodes of training
   | 5   |10/24/2019|Shreesha Narasimha Murthy  |56.79     | Simple DQN with MSE for 40k episodes
   | 6   |10/20/2019|Sinan Morcel            |53.26        |  Plain DQN with TA's parameters
   
