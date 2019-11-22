@@ -27,8 +27,9 @@ In this project, we will provide a leaderboard and give **10** bonus points to t
   | **4**   |10/31/2019| **Mohamed Mahdi Alouane** | **80.24**     | Double DQN with 1e-6 learning rate trained for 100K 
   | 5   |10/26/2019| Vamshi Krishna Uppununthala|  79.5   | Dueling DQN for 50k episodes
   | 6   |10/31/2019| Sai Vineeth K V | 66.5 | Dueling DQN with 19k episodes of training
-  | 7   |10/24/2019|Shreesha Narasimha Murthy  |56.79     | Simple DQN with MSE for 40k episodes
-  | 8   |10/20/2019|Sinan Morcel            |53.26        |  Plain DQN with TA's parameters
+  | 7   |11/14/2019| Cory neville | 59.96 | DQN with target network and 2 output actions (left/right). Modified reward to include -1 on episode end. Trained for 25k episodes.
+  | 8   |10/24/2019|Shreesha Narasimha Murthy  |56.79     | Simple DQN with MSE for 40k episodes
+  | 9   |10/20/2019|Sinan Morcel            |53.26        |  Plain DQN with TA's parameters
   
 * How to elvaluate
   * You should submit your lastest trained model and python code before leaderboard due date. TA will run your code to make sure the result is consistent with your screenshot. 
