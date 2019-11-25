@@ -8,7 +8,7 @@
   * **Thursday November 14, 2019 (23:59)**
   * *About 5 pages*
 * Poster
- * **Sunday December 8, 2019 (23:59)**
+  * **Sunday December 8, 2019 (23:59)**
 * Final Project
   * **Thursday December 12, 2019 (23:59)**
   * *About 10 pages*
