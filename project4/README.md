@@ -17,6 +17,24 @@
 #### Total Points
 * 100 (One Hundred)
 
+
+## Project Titles
+| Group | Title|
+| :---: | :---: |
+|1|Multi-Agent Reinforcement Learning |
+|2|Soccer Playing Agent|
+|3|Deep Reinforcement Learning on Online Shopping Recommendation system|
+|4|Curiosity Driven Exploration by Self-supervised Prediction |
+|5|Stock Market Pricing Prediction |
+|6|Task Centric Reinforcement Learning Methods |
+|7|Adaptive Physical Layer Protocol for Mobile Wireless Communications |
+|8|Learning to Grasp Using the Fetch Robot Environment |
+|9|Curiosity Driven Exploration by Self-supervised Prediction |
+|10|Motion Planning of Turtle Robot Using Reinforcement Learning |
+
+
+
+
 ## Project Ideas
 ### Games
 <p align="center">
