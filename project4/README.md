@@ -14,10 +14,20 @@
   * *About 10 pages*
   * *Code and trained model*
   * *Demo (Optional)*
+  * *Self-and-cross evaluation form*
 
 #### Total Points
 * 100 (One Hundred)
 
+## Arangement of last class(December 12, 2019 Thursday)
+* Pick up your poster from TA in AK123 or in class
+* Register (get your name sticker, anonymous judge form and snacks)
+* Set up your poster by 6:00 pm
+* Session #1: (6-7pm)
+  * For poster with even numbers (2,4,6,8,10)
+* Session #2: (7-7:50 pm)
+  * For poster with odd numbers (1,3,5,7,9)
+* Return your judge form
 
 ## Project Titles
 | Group | Title|
@@ -32,9 +42,6 @@
 |8|Learning to Grasp Using the Fetch Robot Environment |
 |9|Curiosity Driven Exploration by Self-supervised Prediction |
 |10|Motion Planning of Turtle Robot Using Reinforcement Learning |
-
-
-
 
 ## Project Ideas
 ### Games
