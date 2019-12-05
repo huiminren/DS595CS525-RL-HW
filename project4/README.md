@@ -27,6 +27,8 @@
   * For poster with even numbers (2,4,6,8,10)
 * Session #2: (7-7:50 pm)
   * For poster with odd numbers (1,3,5,7,9)
+* Session #3: (7:50-)
+  * Social and Free discussion
 * Return your judge form
 
 ## Project Titles
