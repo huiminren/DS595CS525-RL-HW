@@ -34,15 +34,15 @@
 ## Project Titles
 | Group | Title|
 | :---: | :---: |
-|1|Multi-Agent Reinforcement Learning |
-|2|Soccer Playing Agent|
-|3|Deep Reinforcement Learning on Online Shopping Recommendation system|
-|4|Curiosity Driven Exploration by Self-supervised Prediction |
-|5|Stock Market Pricing Prediction |
-|6|Task Centric Reinforcement Learning Methods |
+|1|Multi-Agent Exploration Learning |
+|2|Soccer Playing MuJoCo Agent|
+|3|Deep Reinforcement Learning on Online Shopping Recommendation System|
+|4|Curiosity Driven Exploration by Self-supervised Prediction: Supercharging DQN |
+|5|Deep Reinforcement Learning in Portfolio Management |
+|6|Task Centric Reinforcement Learning |
 |7|Adaptive Physical Layer Protocol for Mobile Wireless Communications |
-|8|Learning to Grasp Using the Fetch Robot Environment |
-|9|Curiosity Driven Exploration by Self-supervised Prediction |
+|8|Reward Engineering for Object Pick and Place Training |
+|9|Curiosity Driven Exploration for MineRL Navigation Challenge |
 |10|Motion Planning of Turtle Robot Using Reinforcement Learning |
 
 ## Project Ideas
