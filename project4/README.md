@@ -87,7 +87,7 @@
    </p>
    It is also an exploration in building smart tools and interfaces that allow artists and musicians to extend (not replace!) their processes using these models. Go spread your wings, create your unique content for Instagram or Soundcloud and become an influencer.
    
-* You can participate an open AI/RL computition
+* You can participate an open AI/RL competition
   * [MineRL competition 2019](http://minerl.io/competition/): A competition on sample-effiecient reinforcement learning using human priors.
   * [ICLR Challenge](https://www.cs.mcgill.ca/~jpineau/ICLR2019-ReproducibilityChallenge.html): Reproduce recent results in a RL paper. 
   * [Kaggle](https://www.kaggle.com/): An online machine learning competition website.
