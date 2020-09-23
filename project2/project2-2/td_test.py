@@ -42,6 +42,8 @@ def test_sarsa():
     Q_s = sarsa(env, n_episodes = 50000, gamma=1.0, alpha=0.01, epsilon=0.1)
     policy_q = np.array([np.argmax(Q_s[key]) if key in Q_s else -1 for key 
                           in np.arange(48)]).reshape((4,12))
+    
+    print("\nEstimated Optimal Policy (UP = 0, RIGHT = 1, DOWN = 2, LEFT = 3, N/A = -1):")
     print(policy_q)
     assert np.allclose(policy_q.shape,(4,12))
     assert np.allclose(policy_q[2:,],test_policy)
@@ -55,6 +57,7 @@ def test_q_learning():
     test_policy = np.array([[ 1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  2],
        [ 0, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,  0]])
     
+    print("\nEstimated Optimal Policy (UP = 0, RIGHT = 1, DOWN = 2, LEFT = 3, N/A = -1):")
     print(policy_q)
     assert np.allclose(policy_q.shape,(4,12))
     assert np.allclose(policy_q[2:,],test_policy)
