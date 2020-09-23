@@ -42,6 +42,11 @@ Please compress your mc.py and td.py files into a zipped file (firstName_lastNam
 * Q-learing (off-policy TD control)
 <img src="https://github.com/huiminren/DS595CS525-RL-HW/blob/master/project2/img/q-learning.png" width="80%" >
 
+## Setup
+* Install [Python 3](https://www.python.org/downloads/)
+* pip [install gym](https://pypi.org/project/gym/0.7.2/)
+* pip [install nose](https://pypi.org/project/nose/)
+
 ## Guidelines
 * Implement functions in mc.py and td.py
 * Evaluate functions by typing "nosetests -v mc_test.py" and "nosetests -v td_test.py" respectively. (put your function file and test file into the same folder)
